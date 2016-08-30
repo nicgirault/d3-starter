@@ -1,0 +1,29 @@
+{
+  "name": "d3-starter",
+  "version": "1.0.0",
+  "description": "A boilerplate to start a d3 librairy",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --content-base ./ --progress --colors --hot",
+    "build": "webpack --progress --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicgirault/d3-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicgirault/d3-starter/issues"
+  },
+  "homepage": "https://github.com/nicgirault/d3-starter#readme",
+  "dependencies": {
+    "d3": "^4.2.2",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^1.15.0"
+  }
+}

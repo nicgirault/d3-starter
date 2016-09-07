@@ -4,11 +4,38 @@
   <head>
       <title>Demo</title>
       <meta charset='utf-8'></meta>
-      <script src='../dist/spot-my-gene.js'></script>
+      <script src='../dist/circos.js'></script>
+
   </head>
 
   <body>
       <svg id='chart'></svg>
+      <script>
+      circos = new Circos({
+        container: '#chart'
+    });
+
+    circos
+        .layout(
+            {
+                ticks: {display: false},
+            },
+            null
+        )
+        .heatmap('h1', {
+            innerRadius: 180,
+            outerRadius: 240,
+            logScale: false,
+            colorPalette: 'YlOrRd'
+        }, null)
+        .heatmap('h2', {
+            innerRadius: 170,
+            outerRadius: 179,
+            logScale: false,
+            colorPalette: 'Blues'
+        }, null)
+        .render();
+      </script>
   </body>
 
 </html>

@@ -1,8 +1,10 @@
 module.exports = {
-    entry: ['webpack/hot/dev-server', "./src/main.js"],
+    entry: ["./src/main.js"],
     output: {
         path: __dirname + '/dist',
-        filename: "spot-my-gene.js"
+        filename: "circos.js",
+        libraryTarget: "var",
+        library: "Circos"
     },
     module: {
         loaders: [

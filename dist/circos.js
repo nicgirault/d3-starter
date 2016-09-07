@@ -1,3 +1,4 @@
+var Circos =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -44,21 +45,76 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(1);
-	d3 = __webpack_require__(2);
-
-	console.log('test');
+	module.exports = __webpack_require__(1);
 
 
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = console.log("console.log in behavior tutu");
+	const tracks = __webpack_require__(2);
+	const layout = __webpack_require__(3);
+	const render = __webpack_require__(4);
+
+	class Circos {
+	  constructor(configuration) {
+	    this.configuration = configuration;
+	    this.heatmaps = {};
+	  }
+	  layout(configuration, data) {
+	    this.layout = layout(configuration, data);
+	    return this;
+	  }
+	  heatmap(id, configuration, data) {
+	    this.heatmaps[id] = tracks.heatmap(configuration, data);
+	    return this;
+	  }
+	  render() {
+	    render(this);
+	    return this;
+	  }
+	}
+
+	module.exports = Circos;
 
 
 /***/ },
 /* 2 */
+/***/ function(module, exports) {
+
+	const heatmap = function(configuration, data) {
+	  // build a heatmap object
+	  console.log('rendering heatmap');
+	};
+
+	module.exports = {
+	  heatmap
+	}
+
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	module.exports = function(configuration, data){
+	  // build a layout object
+	  console.log('building layout');
+	};
+
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	const d3 = __webpack_require__(5);
+
+	module.exports = function(circos){
+
+	};
+
+
+/***/ },
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// https://d3js.org Version 4.2.2. Copyright 2016 Mike Bostock.

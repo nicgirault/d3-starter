@@ -21,9 +21,11 @@
   "homepage": "https://github.com/nicgirault/d3-starter#readme",
   "dependencies": {
     "d3": "^4.2.2",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.2"
   },
   "devDependencies": {
+    "css-loader": "^0.25.0",
     "webpack-dev-server": "^1.15.0"
   }
 }

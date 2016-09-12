@@ -2,6 +2,8 @@ const tracks = require('./tracks.js');
 const layout = require('./layout.js');
 const render = require('./render.js');
 
+require('./style.css');
+
 class Circos {
   constructor(configuration) {
     this.configuration = configuration;

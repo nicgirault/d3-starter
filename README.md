@@ -21,6 +21,6 @@ To add a dependency, run `npm install --save <YOUR DEPENDENCY>`
 
 ### Serve and watch source files
 
-`npm run watch`
+`npm start`
 
 Then go to `http://localhost:8080/examples/`

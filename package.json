@@ -4,7 +4,7 @@
   "description": "A boilerplate to start a d3 librairy",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base ./ --progress --colors --hot",
+    "start": "webpack-dev-server --inline --hot --output-public-path=dist/",
     "build": "webpack --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

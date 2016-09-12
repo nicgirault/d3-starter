@@ -26,6 +26,6 @@
   },
   "devDependencies": {
     "css-loader": "^0.25.0",
-    "webpack-dev-server": "^1.15.0"
+    "webpack-dev-server": "^1.15.1"
   }
 }
